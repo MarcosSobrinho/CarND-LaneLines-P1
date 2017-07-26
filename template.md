@@ -34,7 +34,7 @@ After computing the average slopes `m_left`, `m_right` and average points `leftP
 
 The image below shows the returned points. Due to visibility the bottom boints are shifted upwards along the line a little bit.
 
-! [Alt text] [./test_images_output/new_solidWhiteCurve.jpg]
+For examples of the Hough transform, please look into the folder "test_images_hough". To see the output of the `slopeGroups()` function, please look into "test_images_output".
 
 ### 2. Potential shortcomings with the current pipeline
 One shortcoming with the current pipeline is that it only computes detects straight lines correctly. In curves the algorithm will fail due to two reasons: The segmentation to left and right side already implies, that the lane lines are straight and not curved. Also the Hough transformation detects straight lines, so it cannot be used either for the detection of curved lines. 
